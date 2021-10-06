@@ -15,6 +15,7 @@ dts = dt.strftime("%d-%m-%Y")
 
 url = url1 + dts + url2
 print("url: ", url)
+input()
 
 req = requests.get(url)
 print(req.text)

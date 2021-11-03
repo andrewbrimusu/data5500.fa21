@@ -121,9 +121,14 @@ def deleteNode(root, key):
 
 	return root
 
-def find_value(root, key):
-    # add the logic to find a key
-
+def findval(root, find_val):
+	if root is not None:
+		findval(root.left, find_val)
+		if root.key == find_val:
+		    return
+		findval(root.right, find_val)
+		
+		
 # Print the tree
 def print_tree(root):
     if root.left:
@@ -234,11 +239,11 @@ def main():
     print_tree(root)
     
     
-    # create a list of 10000 numbers
-    lst = [random.randint(1,10000) for i in range(10000)]
-    # each number is a random number between 1 and 10000 random.randint(1,10000)
+    # # create a list of 10000 numbers
+    # lst = [random.randint(1,10000) for i in range(10000)]
+    # # each number is a random number between 1 and 10000 random.randint(1,10000)
     
-    # in other loop for in 1 to 10000, check to see if i is in the list
+    # # in other loop for in 1 to 10000, check to see if i is in the list
     # start1 = time.time()
     # for i in range(1,10001):
     #     for l in lst:
@@ -253,6 +258,7 @@ def main():
     # for i in range(10000):
     #     root = insert(root, random.randint(1,10000))
         
+    
     # start = time.time()
     # for i in range(10000):
     #     findval(root, i)
@@ -260,7 +266,7 @@ def main():
     
     # print("time (sec): ",end-start)
     
-    print("---------------------")
+    # print("---------------------")
     
     tree2 = None
     tree2 = insert(tree2, 3)

@@ -1,13 +1,14 @@
-polish_str="3 2 * 1 3 * +"
+polish_str="3 2 * 1 4 * +"
 
 #scan from left to right once you got the operator make the operation save the     result again perform the operation
 #result=3
 
-polish_list=[]
-for i in polish_str:
-   polish_list.append(i)
+polish_list = polish_str.split(" ")
+# polish_list=[]
+# for i in polish_str:
+#   polish_list.append(i)
 
-print(polish_list)
+# print(polish_list)
 
 ####
 temp=[]
@@ -38,3 +39,4 @@ for i,v in enumerate(polish_list):
         print("temp in iteration==>",temp)
     else:
         temp.append(i)
+        

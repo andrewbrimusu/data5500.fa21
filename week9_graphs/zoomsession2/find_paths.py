@@ -8,10 +8,13 @@ import networkx as nx
 from networkx.classes.function import path_weight
 
 import os
-os.system("sudo pip3 install matplotlib")
+# os.system("sudo apt-get install libjpeg-dev zlib1g-dev")
+# os.system("pip install Pillow")
+# os.system("sudo pip3 install matplotlib")
+
 import matplotlib.pyplot as plt
 
-file = open("/home/ec2-user/environment/code/week9_graphs/zoomsession2/edges.txt")
+file = open("/home/ubuntu/environment/data5500.fa21/week9_graphs/zoomsession2/edges.txt")
 
 g = nx.DiGraph()
 
@@ -25,7 +28,9 @@ for line in file.readlines():
     edges.append((node1, node2, weight))
     
 print(edges)
-g.add_weighted_edges_from(edges) 
+# g.add_weighted_edges_from(edges) 
+for e in edges:
+    g.add_edge(e[0], e[1], weight=e[2])
 
 # print all nodes
 print(g.nodes)

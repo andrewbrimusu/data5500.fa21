@@ -8,8 +8,9 @@ import networkx as nx
 from networkx.classes.function import path_weight
 
 import os
+# os.system("sudo pip install networkx")
 # os.system("sudo apt-get install libjpeg-dev zlib1g-dev")
-# os.system("pip install Pillow")
+# os.system("sudo pip install Pillow")
 # os.system("sudo pip3 install matplotlib")
 
 import matplotlib.pyplot as plt

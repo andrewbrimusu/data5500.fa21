@@ -6,9 +6,9 @@ from itertools import permutations
 
 
 import os
-# os.system("sudo pip install networkx")
+# os.system("sudo pip3 install networkx")
 # os.system("sudo apt-get install libjpeg-dev zlib1g-dev")
-# os.system("sudo pip install Pillow")
+# os.system("sudo pip3 install Pillow")
 # os.system("sudo pip3 install matplotlib")
 
 import matplotlib.pyplot as plt

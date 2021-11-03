@@ -4,8 +4,6 @@ import time
 from datetime import datetime, timedelta
 from itertools import permutations
 
-import networkx as nx
-from networkx.classes.function import path_weight
 
 import os
 # os.system("sudo pip install networkx")
@@ -14,6 +12,8 @@ import os
 # os.system("sudo pip3 install matplotlib")
 
 import matplotlib.pyplot as plt
+import networkx as nx
+from networkx.classes.function import path_weight
 
 file = open("/home/ubuntu/environment/data5500.fa21/week9_graphs/zoomsession2/edges.txt")
 

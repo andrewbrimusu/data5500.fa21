@@ -11,6 +11,10 @@ boston = datasets.load_boston(return_X_y=False)
 # defining feature matrix(X) and response vector(y)
 X = boston.data
 y = boston.target
+
+
+X = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]).reshape(-1,1)
+y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12])#.reshape(-1,1)
  
 # splitting X and y into training and testing sets
 from sklearn.model_selection import train_test_split

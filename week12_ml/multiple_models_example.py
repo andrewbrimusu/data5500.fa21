@@ -46,7 +46,7 @@ print("y predictions: ", y_pred)
 # print("y actuals: ", y_test)
 
 confusion_matrix = pd.crosstab(y_test, y_pred, rownames=['Actual'], colnames=['Predicted'])
-sn.heatmap(confusion_matrix, annot=True).get_figure().savefig("/home/ec2-user/environment/code/week12_ml/random_forest.png")
+sn.heatmap(confusion_matrix, annot=True).get_figure().savefig("/home/ubuntu/environment/data5500.fa21/week12_ml/random_forest.png")
 # sn.get_figure().savefig("results.png")
 print('Accuracy: ',metrics.accuracy_score(y_test, y_pred))
 plt.show()
@@ -79,7 +79,7 @@ for model in models:
             
             
     confusion_matrix = pd.crosstab(y_test, y_pred, rownames=['Actual'], colnames=['Predicted'])
-    sn.heatmap(confusion_matrix, annot=True).get_figure().savefig("/home/ec2-user/environment/code/week12_ml/random_forest.png")
+    sn.heatmap(confusion_matrix, annot=True).get_figure().savefig("/home/ubuntu/environment/data5500.fa21/week12_ml/" + str(model) + ".png")
     # sn.get_figure().savefig("results.png")
     print('Accuracy: ',metrics.accuracy_score(y_test, y_pred))
     plt.show()

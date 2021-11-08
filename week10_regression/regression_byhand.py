@@ -1,9 +1,18 @@
 import os
+<<<<<<< HEAD
 os.system("sudo pip3 ")
+=======
+# os.system("sudo pip3 install networkx")
+# os.system("sudo apt-get install libjpeg-dev zlib1g-dev")
+# os.system("sudo pip3 install Pillow")
+# os.system("sudo pip3 install matplotlib")
+
+>>>>>>> cb36103687c41f6ddb691f65fb602ff17b1add28
 
 import numpy as np
 import matplotlib.pyplot as plt
  
+
 def estimate_coef(x, y):
     # number of observations/points
     n = np.size(x)

@@ -83,6 +83,7 @@ url1 = "http://www.floatrates.com/daily/"
 url2 = ".json"
 for c1, c2 in permutations(currencies,2):
     url = url1 + c1 + url2
+    print(url)
     # add logic to get currency information
     
 g.add_weighted_edges_from(edges) 

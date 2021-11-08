@@ -1,3 +1,6 @@
+import os
+os.system("sudo pip3 ")
+
 import numpy as np
 import matplotlib.pyplot as plt
  

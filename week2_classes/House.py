@@ -4,7 +4,9 @@ class House():
         self.sq_ft = sq_ft
         self.num_bathrms = num_bathrms
         self.num_bedrms = num_bedrms
-        
+        self.age_home = age_home
+    
+    # getters
     def get_area_code(self):
         return self.area_code
         
@@ -16,11 +18,12 @@ class House():
         
     def get_num_bedrms(self):
         return self.num_bedrms
-    
+        
     def get_age_home(self):
         return self.age_home
         
-    def set_area_code(sel, area_code):
+    #setters
+    def set_area_code(self, area_code):
         self.area_code = area_code
         
     def set_sq_ft(self, sq_ft):
@@ -36,7 +39,12 @@ class House():
         self.age_home = age_home
         
     
-andys_house = House(630, 1500, 4, 2, 80)
-andys_house.set_age_home(90)
-print(andys_house.get_age_home())
+        
+our_house = House(435, 3000, 3, 5, 0)
+
+our_house.set_sq_ft(3500)
+
+print(our_house.get_sq_ft())
+
+
 

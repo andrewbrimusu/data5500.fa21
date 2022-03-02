@@ -1,5 +1,6 @@
 import random
 
+
 class Card():
     def __init__(self, suit, face, value):
         self.suit = suit
@@ -34,5 +35,7 @@ class DeckOfCards():
         
     def get_card(self):
         self.play_idx += 1
-        return self.play_idx - 1
+        return self.deck[self.play_idx - 1]
         
+        
+

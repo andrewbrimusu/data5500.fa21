@@ -3,7 +3,7 @@ import os
 # os.system("pip3 install numpy")
 
 
-prcs = [float(x) for x in open("week3/zm.txt").readlines()]
+prcs = [float(x) for x in open("/home/ubuntu/environment/data5500.fa21/week3_algo_analysis_tradingexample/wmt.txt").readlines()]
 print(prcs)
 
 buy = 0
@@ -12,13 +12,15 @@ i = 0
 days = 5
 
 for p in prcs:
+    prcs = [float(x) for x in open("/home/ubuntu/environment/data5500.fa21/week3_algo_analysis_tradingexample/wmt.txt").readlines()]
+
     if i >= days:
         avg = np.mean(prcs[i-days:i])
         
-        if p < avg * .95 and buy == 0: # buy
+        if p < avg * .98 and buy == 0: # buy
             buy = p
             print("buying: ", p)
-        elif p > avg * 1.05 and buy != 0: # sell
+        elif p > avg * 1.02 and buy != 0: # sell
             profit += p - buy
             buy = 0
             print("selling at: ", p)

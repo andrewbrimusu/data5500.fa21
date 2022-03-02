@@ -12,9 +12,9 @@ for i in range(len(prices)):
         p = prices[i]
         avg = np.mean(prices[i-days:i])
         
-        if p < avg * 0.98 and buy == 0: #buy
+        if p < avg * 0.97 and buy == 0: #buy
             buy = p
-        elif p > avg * 1.02 and buy != 0: #sell
+        elif p > avg * 1.03 and buy != 0: #sell
             profit += p - buy
             buy = 0
         else:
